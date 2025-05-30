@@ -65,6 +65,10 @@
       letter-spacing: 0.5px;
     }
     .btn-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
       margin-top: 1.5rem;
     }
     .btn {
@@ -82,6 +86,33 @@
     }
     .btn:hover {
       filter: brightness(1.1);
+    }
+    .btn.store-badge {
+      background: none;
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .btn.store-badge img {
+      height: 48px;
+      width: auto;
+      display: block;
+    }
+    .btn.store-badge.coming-soon {
+      background-color: #f0f0f0;
+      color: #444444;
+      padding: 0 0.5rem;
+      margin: 0 0.5rem;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      opacity: 1;
+      pointer-events: none;
+      text-decoration: none;
+      border: 1px solid #dddddd;
     }
 
     main {
@@ -127,10 +158,14 @@
     <h1>Stellar Manifestation</h1>
     <p class="tagline">Manifest with personalized Vedic soundscapes</p>
     <div class="btn-group">
-      <!-- Replace '#' with your App Store URL -->
-      <a href="#" class="btn">Download on App Store</a>
-      <!-- Replace '#' with your Google Play URL -->
-      <a href="#" class="btn">Get it on Google Play</a>
+      <a href="https://apps.apple.com/us/app/stellar-manifestation/id6746156274?itscg=30200&itsct=apps_box_badge&mttnsubad=6746156274"
+         class="btn store-badge">
+        <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/en-us?releaseDate=1748476800"
+             alt="Download on the App Store" />
+      </a>
+      <a class="btn store-badge coming-soon" href="#" aria-disabled="true">
+        Coming Soon on Google Play
+      </a>
     </div>
   </header>
 
@@ -149,7 +184,7 @@
 
     <section id="read-more">
       <h2>Learn More</h2>
-      <p>Discover the remedial research behind our method in <a href="https://www.amazon.com/yourbooklink" target="_blank" rel="noopener">Anuguna Tara Paddati</a> (Kindle).</p>
+      <p>Our book <em>Anuguna Tara Paddati</em> is currently under review and will be available on Kindle soon.</p>
     </section>
   </main>
 
